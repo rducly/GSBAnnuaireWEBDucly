@@ -20,3 +20,19 @@ function soumettre(){
     document.formulaire.action = "connexion.php";
 	document.formulaire.submit();
 }
+
+
+function controllerAjout() {
+	//var b= Boolean("true");
+	for(var i=0;i<document.formulaireAjouter.length;i++)
+   {   
+         if(document.formulaireAjouter.elements[i].value =='')
+		 
+	     document.formulaireAjouter.elements[i].value = prompt("Vous avez omis de compléter le champ suivant !\n"+document.formulaireAjouter.elements[i].name+":","");
+			 
+   }
+	
+		if(confirm("Le formulaire est complet !\nVoulez-vous enregistrer ce nouveau praticien ?"))
+			document.formulaireAjouter.submit(); 	
+   }
+   

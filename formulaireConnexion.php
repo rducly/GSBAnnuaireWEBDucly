@@ -12,7 +12,7 @@
 	
 	<p style="text-align: center;"><b id="titre">Authentification </b></p>
 	<form name="formulaire" action="connexion.php" method="POST"> <br>
-		<IMG src="logo.png">
+		<IMG src="logoGSB.png">
 		<br><br>
 		<label for="utilisateur">Identifiant</label>
 		<br>
